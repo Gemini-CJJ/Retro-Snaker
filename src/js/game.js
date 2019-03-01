@@ -10,7 +10,7 @@ game.init = function () {
 
     //监控事件 控制蛇的移动
     document.onkeydown = function(e) {
-        //e.which  left 37 top 38 right 39  down 40 
+        //e.which  left 37 top 38 right 39  down 40
         if(e.which == 37 && snake.direction != DERECTIONENUM.RIGHT) {
             snake.direction = DERECTIONENUM.LEFT;
         }else if(e.which == 38 && snake.direction != DERECTIONENUM.DOWN) {
